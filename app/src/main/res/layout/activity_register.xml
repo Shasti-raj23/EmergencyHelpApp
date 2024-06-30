@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@color/background"
+    >
+    <TextView
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15pt"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:hint="username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50pt"
+        android:id="@+id/uname"
+
+        >
+    </EditText>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_below="@+id/uname"
+        android:hint="password"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/regpass"
+        android:inputType="textPassword"
+        >
+    </EditText>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:hint="confirm password"
+        android:layout_below="@+id/regpass"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/conpass"
+        android:inputType="textPassword"
+        >
+    </EditText>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:layout_below="@+id/conpass"
+        android:hint="mobile number"
+        android:id="@+id/mobile_number"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        >
+
+    </EditText>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:id="@+id/bloodgroup"
+        android:hint="Blood Group"
+        android:layout_below="@id/mobile_number"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:id="@+id/gardian_name"
+        android:hint="Gardian Name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bloodgroup"
+        >
+
+    </EditText>
+    <EditText
+        android:layout_width="100pt"
+        android:layout_height="20pt"
+        android:hint="Gardian Phone"
+        android:id="@+id/gardian_phone"
+        android:layout_below="@+id/gardian_name"
+        android:layout_centerHorizontal="true">
+
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20pt"
+        android:text="submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mobile_number"
+        android:backgroundTint="@color/text1"
+        android:layout_marginTop="80pt"
+        android:id="@+id/submit">
+    </Button>
+
+        
+
+
+</RelativeLayout>

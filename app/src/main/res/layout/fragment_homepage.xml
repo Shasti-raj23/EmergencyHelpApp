@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="30pt"
+            android:layout_height="60pt"
+            android:layout_marginTop="250pt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/speed"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Safe Travel"
+            android:textColor="@color/white"
+            android:textSize="20pt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shake to alert"
+            android:layout_below="@+id/title"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:src="@drawable/sosbutton"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="20pt"
+            android:id="@+id/alert"
+            android:layout_marginTop="300pt"
+
+            ></TextView>
+
+    </RelativeLayout>
+</FrameLayout>

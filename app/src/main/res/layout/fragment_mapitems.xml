@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapitems">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Service"
+            android:id="@+id/eme"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp">
+        </TextView>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_below="@+id/eme"
+            android:id="@+id/grid"
+            android:layout_marginBottom="20dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/gray"
+                android:layout_rowWeight="1"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/police"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/police"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="police station"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@color/gray"
+                android:id="@+id/hospital"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/hosp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hospital"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid"
+            android:text="Save catogories"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/save"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save">
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:id="@+id/bus"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/busv"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp"
+                >
+                <ImageView
+                    android:layout_width="10pt"
+                    android:layout_height="10pt"
+                    android:src="@drawable/shield"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/save"
+            android:layout_marginTop="80dp"
+            />
+        <EditText
+            android:layout_below="@+id/save"
+            android:id="@+id/medit"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_height="150dp"
+            android:layout_marginTop="130dp"
+            android:hint=" message"
+            android:background="@drawable/custom_input"
+            android:gravity="start"
+            />
+
+        <EditText
+            android:id="@+id/emedit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/medit"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20px"
+            android:background="@drawable/custom_input"
+            android:hint=" e-mail"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/emedit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:background="@color/gray"
+            android:text="send"
+            android:id="@+id/sendbtn"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck"></Button>
+    </RelativeLayout>
+
+</FrameLayout>

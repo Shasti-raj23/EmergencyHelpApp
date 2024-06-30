@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilepage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:text="Accigaurd"
+            android:textStyle="bold"
+            android:textSize="15pt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile_title">
+
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_below="@+id/profile_title"
+            android:text="name"
+            android:textSize="10pt"
+            android:id="@+id/pname"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="40dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_title"
+            android:layout_marginTop="40dp"
+            android:id="@+id/p_name"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_below="@+id/pname"
+            android:text="phone"
+            android:textSize="10pt"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/pphone"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/p_phone"
+            android:layout_below="@+id/p_name">
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_below="@+id/pphone"
+            android:text="blood"
+            android:id="@+id/pblood"
+            android:textSize="10pt"
+            android:layout_marginLeft="3dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/p_phone"
+            android:id="@+id/p_blood">
+
+
+        </TextView>
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="25pt"
+            android:layout_below="@+id/pblood"
+            android:text="gardian 1 phone"
+            android:id="@+id/pgphone"
+            android:textSize="10pt"
+            android:layout_marginLeft="3dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="100pt"
+            android:layout_height="20pt"
+            android:layout_below="@+id/p_blood"
+            android:id="@+id/p_gphone"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+    </RelativeLayout>
+
+</FrameLayout>
